@@ -1,0 +1,449 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.container{
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+}
+nav{
+    padding-top: 15px;
+}
+.sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 300px;
+  z-index: 999;
+  background-color: #3ccef3;
+  display:none;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 50px;
+  backdrop-filter: blur(10px);
+  justify-content: flex-start;
+}
+
+ul.sidebar{
+  gap:30px;
+}
+.sidebar li{
+    /* width: 100%; */
+    padding: 0px 20px;
+}
+.sidebar a{
+    width: 100%;
+    padding: 10px 20px;
+  list-style: none;
+}
+.sidebar a:hover{
+    background-color: #08a6ce;
+    border-radius: 10px;
+}
+.pro5-backPic{
+    background-image: url(./images/pro5-backPic.jpg);
+    background-size: cover;
+    /* height: 1000PX; */
+    padding-bottom: 500px;
+    background-position: center;
+    font-family: sans-serif;
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+/* nav li{
+    height: 0px;
+} */
+nav a{
+    /* height: 100%; */
+    padding: 20px 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+}
+nav a:hover{
+    background-color: #3ccef3;
+    border-radius: 10px;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+li img.menu{
+    filter: invert(1);
+}
+li img.menu12{
+    display: none;
+}
+.h1 h1{
+        color: white;
+    font-size: 65px;
+    font-weight: bold;
+    font-family: cursive;
+    text-align: center;
+    padding-top: 130px;
+}
+.Egg-section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.egg-img{
+    background-image: url(./images/eggPic.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.egg-img2{
+    background-image: url(./images/glass.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.egg-text{
+        padding: 115px 120px
+}
+.egg-text p{
+        font-family: sans-serif;
+    max-width: 405px;
+    line-height: 1.6;
+    padding-top: 30px;
+    font-weight: bold;
+    color: #818498;
+}
+.egg-text h1{
+    color: #23303e;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 45px;
+    max-width: 400px;
+}
+.egg-text h3{
+        padding: 30px 8px;
+    color: #23303e;
+    font-weight: bold;
+    border-bottom: 5px solid #ffef94 ;
+    width: fit-content;
+    padding-bottom: 0px;
+    cursor: pointer;
+    transition: all ease-in .2s;
+}
+.egg-text h3.glas{
+    border-bottom: 5px solid #ffd2cc;
+}
+.egg-text h3:hover{
+    border-bottom: 5px solid #fad400;
+}
+.egg-text h3.glas:hover{
+    border-bottom: 5px solid #fe7867;
+}
+.fruitPics{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    font-family: sans-serif;
+}
+.apple{
+    background-image: url(./images/apple.jpg);
+    background-size: cover;
+     padding-bottom: 25px;
+     background-position: center;
+}
+
+.apple-text{
+    padding: 60px 0px;
+    text-align: center;
+}
+.apple h1{
+    color: #25564b;
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 280px;
+    font-family: emoji;
+}
+.apple p{
+    font-weight: bold;
+    max-width: 400px;
+    color: #25564b;
+    line-height: 1.7;
+    margin: auto;
+    padding-top: 32px;
+}
+.orang h1{
+    color: #19536b;
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 280px;
+    font-family: emoji;
+}
+.orang p{
+    font-weight: bold;
+    max-width: 450px;
+    color: #19536b;
+    line-height: 1.7;
+    margin: auto;
+    padding-top: 30px;
+}
+.orang{
+    background-image: url(./images/mango.jpg);
+    background-size: cover;
+    padding-bottom: 25px;
+    background-position: center;
+}
+.client-reaction{
+    padding-top: 100px;
+}
+.client-reaction .h2 h2{
+        color: #a7abae;
+    text-align: center;
+    padding-top: 10px;
+    letter-spacing: 4px;
+    /* font-family: "Fraunces"; */
+    font-weight: 900;
+    font-family: monospace
+}
+.client1 img{
+        border-radius: 100px;
+    width: 80px;
+}
+.client1 p{
+    font-family: sans-serif;
+    font-weight: bold;
+    max-width: 290px;
+    margin: auto;
+    line-height: 1.7;
+    color: #5a636c;
+    padding-top: 60px;
+}
+.client1 h3{
+    color: #23303e;
+    padding-top: 75px;
+    font-weight: bolder;
+    font-family: sans-serif;
+    font-size: 21px;
+}
+.client1 h4{
+    color: #a7abae;
+    padding-top: 15px;
+    font-weight: bolder
+}
+.client-grid{
+    grid-template-columns: repeat(3,1fr);
+    display: grid;
+    text-align: center;
+    margin-top: 60px;
+}
+.onlyPics{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 150px;
+}
+.pic1{
+    background-image: url(./images/bottels.jpg);
+    background-size: cover;
+    padding-bottom: 430px;
+}
+.pic2{
+    background-image: url(./images/malta.jpg);
+    background-size: cover;
+        padding-bottom: 350px !important;
+
+}
+.pic3{
+    background-image: url(./images/ice.jpg);
+    background-size: cover;
+        padding-bottom: 430px;
+}
+.pic4{
+    background-image: url(./images/boxes.jpg);
+    background-size: cover;
+        padding-bottom: 430px;
+}
+footer{
+    background-color: #90D4C6;
+    text-align: center;
+}
+.foot-padding{
+    padding: 80px 0px;
+}
+.foot-logo img{
+    width: 180px;
+    filter: invert(24%) sepia(75%) saturate(303%) hue-rotate(116deg) brightness(46%) contrast(90%);
+}
+.foot-text{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 40px 0px;
+}
+.foot-text a{
+    font-size: 18px;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #458c7e;
+    font-weight: bold;
+}
+.foot-text a:hover{
+    color: white;
+}
+.foot-icons{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: -25px;
+    padding-bottom: 50px;
+    cursor: pointer;
+
+}
+.foot-icons img:hover{
+filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(304deg) brightness(200%) contrast(102%)
+}
+.last-sec{
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    font-weight: bold;
+}
+.last-sec p{
+    cursor: pointer;
+    padding-top: 25px;
+    color: #23303e;
+}
+.last-sec p span{
+    color: #19536b;
+    font-weight: 800;
+}
+.last-sec p span:hover{
+    text-decoration: underline;
+    color: #5a636c;
+}
+.egg-img1{
+    display: none;
+}
+.glas-img3{
+    display: none;
+}
+@media all and (max-width:440px){
+.sidebar{
+    width: 400px;
+    padding: 40px 30px;
+}
+}
+@media all and (max-width:1070px){
+    .egg-text {
+    padding: 80px 50px;
+}
+
+}
+@media all and (max-width:800px) {
+    .hide{
+        display: none;
+    }
+    li img.menu12{
+    display: block;
+    filter: invert(1);
+}
+.pro5-backPic.container{
+    width: 100%;
+}
+.h1 h1{
+    font-family: serif;
+    font-size: 46px;
+    padding-top: 100px;
+}
+.pro5-backPic {
+    background-image: url(./images/new-back.jpg);
+    padding-bottom: 290px;
+}
+.Egg-section {
+    grid-template-columns: repeat(1,1fr);
+    text-align: center;
+}
+.egg-text h1{
+    font-size: 34px;
+}
+.egg-text h3{
+    margin: auto;
+}
+.Egg-section.container{
+    width: 100%;
+}
+.egg-text {
+    padding: 30px 15px;
+    margin: auto;
+}
+.fruitPics.container{
+    width: 100%;
+}
+.fruitPics{
+    grid-template-columns: repeat(1,1fr);
+}
+.apple{
+    background-position: center;
+}
+.orang{
+    background-position: center;
+}
+.client-reaction {
+    padding-top: 40px;
+}
+.client-grid{
+    grid-template-columns: repeat(1,1fr);
+}
+.client1 p{
+    padding-top: 35px;
+    max-width: 300px;
+}
+.client1 h3{
+    padding-top: 40px;
+}
+.client1 h4{
+    padding-bottom: 80px;
+}
+.onlyPics.container{
+    width: 100%;
+}
+.onlyPics{
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 0px;
+}
+.pic4 {
+    padding-bottom: 230px;
+}
+.pic3 {
+    background-position: center;
+    padding-bottom: 230px;
+}
+.pic2 {
+    padding-bottom: 230px !important;
+}
+.pic1 {
+    padding-bottom: 230px;
+    background-image: url(./images/new-bottel.jpg);
+    background-position: right;
+}
+footer.container{
+    width: 100%;
+}
+.egg-img{
+    display: none;
+}
+.egg-img1{
+    display: block;
+}
+.egg-img1 img{
+    
+    width: 100%;
+}
+.glas-img3{
+    display: block;
+}
+.glas-img3 img{
+    width: 100%;
+}
+}
